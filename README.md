@@ -30,14 +30,8 @@ Examples:
 
 ## Usage
 
-**GCC with `-Wmisra-c`**
 ```bash
 gcc -Wmisra-c -std=c11 MISRAC-X-Y-Z-NC.c
-```
-
-**PC-lint Plus with `au-misra5.lnt`**
-```bash
-pclp64_linux au-misra5.lnt gcc.lnt "-width(0)" MISRAC-X-Y-Z-NC.c
 ```
 
 ## Evaluation Metrics
@@ -85,14 +79,8 @@ MISRAC-{major}-{minor}-{variant}-{TYPE}.c
 
 ## 使用方式
 
-**GCC 搭配 `-Wmisra-c`**
 ```bash
 gcc -Wmisra-c -std=c11 MISRAC-X-Y-Z-NC.c
-```
-
-**PC-lint Plus 搭配 `au-misra5.lnt`**
-```bash
-pclp64_linux au-misra5.lnt gcc.lnt "-width(0)" MISRAC-X-Y-Z-NC.c
 ```
 
 ## 評估指標
