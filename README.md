@@ -30,8 +30,13 @@ Examples:
 
 ## Usage
 
+These test cases require a modified GCC with MISRA C:2025 support (`-Wmisra-c`).
+The standard GCC does not include this flag.
+
+Source: https://github.com/OmOstarter/gcc-7.5.0-misra-c
+
 ```bash
-gcc -Wmisra-c -std=c11 MISRAC-X-Y-Z-NC.c
+/usr/local/misrac2026/bin/gcc -Wmisra-c -std=c11 MISRAC-X-Y-Z-NC.c
 ```
 
 ## Evaluation Metrics
@@ -79,8 +84,12 @@ MISRAC-{major}-{minor}-{variant}-{TYPE}.c
 
 ## 使用方式
 
+這些測試檔需要搭配支援 `-Wmisra-c` 的修改版 GCC 使用，標準 GCC 不包含此旗標。
+
+原始碼：https://github.com/OmOstarter/gcc-7.5.0-misra-c
+
 ```bash
-gcc -Wmisra-c -std=c11 MISRAC-X-Y-Z-NC.c
+/usr/local/misrac2026/bin/gcc -Wmisra-c -std=c11 MISRAC-X-Y-Z-NC.c
 ```
 
 ## 評估指標
