@@ -1,6 +1,4 @@
 /* MISRA C:2025 Rule 8.18 - Non-compliant examples
- * There shall be no tentative definitions in a header file.
- *
  * Violations are in MISRAC-8-18-1.h (included below):
  *   1. int32_t i;        -- tentative definition in header
  *   2. static int32_t k; -- static tentative definition in header

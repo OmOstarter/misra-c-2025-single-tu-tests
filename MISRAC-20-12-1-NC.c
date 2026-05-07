@@ -1,8 +1,4 @@
 /* MISRA C:2025 Rule 20.12 - Non-compliant and compliant examples
- * A macro parameter used as an operand to # or ## which is itself subject
- * to further macro replacement shall only be used as an operand to these
- * operators.
- *
  * Non-compliant:
  *   BB(AA) -- x used as both ## operand and regular expansion;
  *             AA is a macro so the two uses behave differently.

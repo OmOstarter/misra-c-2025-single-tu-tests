@@ -1,6 +1,4 @@
 /* MISRA C:2025 Rule 4.1 - Non-compliant and compliant examples
- * Octal and hexadecimal escape sequences shall be terminated.
- *
  * Non-compliant: escape sequence followed by a character that is neither
  *   another escape sequence nor the end of the string/character constant.
  *

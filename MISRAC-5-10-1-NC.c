@@ -1,6 +1,4 @@
 /* MISRA C:2025 Rule 5.10 - Non-compliant examples
- * A reserved identifier or reserved macro name shall not be declared.
- *
  * Violations:
  *   1. Macro name begins with '_'            (_MY_CONSTANT)
  *   2. File-scope variable begins with '_'   (_global_count)

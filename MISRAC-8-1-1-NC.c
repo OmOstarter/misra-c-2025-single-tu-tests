@@ -1,6 +1,4 @@
 /* MISRA C:2025 Rule 8.1 - Non-compliant examples
- * Types shall be explicitly specified.
- *
  * Violations:
  *   1. Object declaration with implicit int        (extern x)
  *   2. Qualified object with implicit int          (const y)

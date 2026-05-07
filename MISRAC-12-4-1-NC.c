@@ -1,8 +1,5 @@
 /*
  * MISRA C:2025 Rule 12.4 test.
- * Rule: Evaluation of constant expressions should not lead to
- * unsigned integer wrap-around.
- *
  * Note: uint8_t/uint16_t operands are promoted to int before arithmetic,
  * so wrap-around only occurs when the operation type is unsigned int or wider.
  */

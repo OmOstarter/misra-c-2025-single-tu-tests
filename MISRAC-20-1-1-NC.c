@@ -1,7 +1,4 @@
 /* MISRA C:2025 Rule 20.1 - Non-compliant examples
- * #include directives should only be preceded by preprocessor directives
- * or comments.
- *
  * Violations:
  *   1. #include <stddef.h> -- code (variable declaration) precedes it
  *

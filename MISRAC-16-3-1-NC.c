@@ -1,6 +1,4 @@
 /* MISRA C:2025 Rule 16.3 - Non-compliant examples
- * Every switch-clause shall be appropriately terminated.
- *
  * Violations:
  *   1. case 4: a = b;              -- break omitted, falls into case 5
  *   2. case 5: if (a==b){..break}  -- conditional break, not all paths terminate

@@ -1,6 +1,4 @@
 /* MISRA C:2025 Rule 8.19 - Non-compliant examples
- * There should be no external declarations in a source file.
- *
  * Violations:
  *   1. extern int32_t i;          -- extern var at file scope in .c
  *   2. extern bool flag;          -- extern var at block scope

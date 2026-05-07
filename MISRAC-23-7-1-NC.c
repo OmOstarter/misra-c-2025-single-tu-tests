@@ -1,8 +1,6 @@
 /* rule23_7_clean.c
  *
  * 純粹用來測 MISRA-C Rule 23.7：
- * A generic selection that is expanded from a macro should evaluate
- * its argument only once.
  */
 
 #include <stdint.h>

@@ -1,7 +1,4 @@
 /* MISRA C:2025 Rule 20.7 - Non-compliant examples
- * Expressions resulting from macro parameter expansion shall be
- * appropriately delimited.
- *
  * Violations:
  *   1. #define M1(x, y) (x * y)  -- x and y lack surrounding delimiters
  *

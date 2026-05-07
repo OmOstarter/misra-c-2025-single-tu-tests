@@ -1,6 +1,4 @@
 /* MISRA C:2025 Rule 17.7 - Non-compliant examples
- * The value returned by a function having non-void return type shall be used.
- *
  * Violations:
  *   1. func(para2);           -- return value discarded
  *
