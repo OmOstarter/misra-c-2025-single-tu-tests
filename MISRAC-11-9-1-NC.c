@@ -11,12 +11,12 @@ static int32_t *g;
 
 static void f(void)
 {
-    int32_t *p1 = 0;             /* Non-compliant: integer 0, not NULL */
-    int32_t *p2 = (void *)0;     /* Compliant: (void*)0 form */
-    int32_t *p3 = NULL;          /* Compliant: NULL macro */
+    int32_t *p1 = 0;             /* Non-compliant*/
+    int32_t *p2 = (void *)0;     /* Compliant */
+    int32_t *p3 = NULL;          /* Compliant */
 
     /* Comparison */
-    if (p1 == 0) {}              /* Non-compliant */
+    if (p1 == 0) {}              /* Non-compliant*/
     if (p2 == NULL) {}           /* Compliant */
     if (p3 != 0) {}              /* Non-compliant */
 

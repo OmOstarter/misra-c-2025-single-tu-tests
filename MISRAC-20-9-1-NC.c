@@ -4,7 +4,7 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-#if UNDEFINED_FLAG           /* Non-compliant: identifier not defined before evaluation. */
+#if UNDEFINED_FLAG           /* Non-compliant */
 #endif
 
 int main(void)

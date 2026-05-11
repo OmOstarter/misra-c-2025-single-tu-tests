@@ -6,8 +6,8 @@
 
 #include <stdint.h>
 
-int32_t i;          /* Non-compliant: tentative definition in header */
-static int32_t k;   /* Non-compliant: static tentative definition in header */
+int32_t i;          /* Non-compliant */
+static int32_t k;   /* Non-compliant */
 
-/* Compliant: external declaration only, no storage reserved */
+/* Compliant*/
 extern int32_t j;

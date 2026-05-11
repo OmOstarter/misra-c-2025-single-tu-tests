@@ -8,7 +8,7 @@
 
 int main(void)
 {
-    bool b = (bool)3;        /* Non-compliant: cast to essentially Boolean from integer. */
+    bool b = (bool)3;        /* Non-compliant*/
     return b ? 0 : 1;
 }
 

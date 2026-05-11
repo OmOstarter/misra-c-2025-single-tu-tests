@@ -6,6 +6,6 @@
 
 int main(void)
 {
-    return undeclared_function(); /* Non-compliant: implicit function declaration in C90. */
+    return undeclared_function(); /* Non-compliant */
 }
 

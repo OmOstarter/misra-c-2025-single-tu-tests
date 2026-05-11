@@ -9,7 +9,7 @@
 int main(void)
 {
     bool flag = true;
-    int x = flag + 1;        /* Non-compliant: Boolean used as arithmetic operand. */
+    int x = flag + 1;        /* Non-compliant */
     return x;
 }
 

@@ -18,18 +18,18 @@ int main(void)
     float32_t f32a = 1.0f;
     char cha = 'a';
 
-    (void)('0' + u8a);       /* Compliant: character + unsigned rank <= int. */
-    (void)(s8a + '0');       /* Compliant: signed rank <= int + character. */
-    (void)(cha + 1);         /* Compliant: character + signed rank <= int. */
-    (void)(1 + cha);         /* Compliant: signed rank <= int + character. */
-    (void)(cha - '0');       /* Compliant: character - character. */
-    (void)('0' - s8a);       /* Compliant: character - signed rank <= int. */
-    (void)(cha - 1);         /* Compliant: character - signed rank <= int. */
+    (void)('0' + u8a);       /* Compliant*/
+    (void)(s8a + '0');       /* Compliant*/
+    (void)(cha + 1);         /* Compliant*/
+    (void)(1 + cha);         /* Compliant*/
+    (void)(cha - '0');       /* Compliant*/
+    (void)('0' - s8a);       /* Compliant*/
+    (void)(cha - 1);         /* Compliant */
 
-    (void)(s16a - 'a');      /* Non-compliant: left operand is not character. */
-    (void)('0' + f32a);      /* Non-compliant: other operand is floating. */
-    (void)(cha + ':');       /* Non-compliant: character + character. */
-    (void)(cha - ena);       /* Non-compliant: second operand is enum. */
+    (void)(s16a - 'a');      /* Non-compliant*/
+    (void)('0' + f32a);      /* Non-compliant */
+    (void)(cha + ':');       /* Non-compliant*/
+    (void)(cha - ena);       /* Non-compliant*/
 
     return 0;
 }

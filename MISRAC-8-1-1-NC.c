@@ -1,35 +1,28 @@
 /* MISRA C:2025 Rule 8.1 - Non-compliant examples
- * Violations:
- *   1. Object declaration with implicit int        (extern x)
- *   2. Qualified object with implicit int          (const y)
- *   3. Function declaration with implicit int ret  (extern f)
- *   4. Struct member with implicit int             (struct str.b)
- *   5. K&R-style parameter with implicit int       (void h(a))
- *   6. Function definition with implicit int ret   (g(void))
  */
 
-/* Non-compliant: implicit int for external object */
+/* Non-compliant */
 extern x;
 
-/* Non-compliant: implicit int for qualified object */
+/* Non-compliant */
 const y = 5;
 
-/* Non-compliant: implicit int return type (function declaration) */
+/* Non-compliant */
 extern f(void);
 
-/* Non-compliant: implicit int for struct member */
+/* Non-compliant */
 struct str {
     int a;
     const b;
 } s;
 
-/* Non-compliant: K&R-style parameter with implicit int */
+/* Non-compliant*/
 void h(a)
 {
     (void)a;
 }
 
-/* Non-compliant: function definition with implicit int return type */
+/* Non-compliant*/
 g(void)
 {
     return 0;

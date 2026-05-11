@@ -4,7 +4,7 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-union U                      /* Non-compliant: union keyword used. */
+union U                      /* Non-compliant */
 {
     int i;
     float f;

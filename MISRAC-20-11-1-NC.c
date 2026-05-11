@@ -4,7 +4,7 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-#define BAD(a, b) #a ## b    /* Non-compliant: parameter after # followed by ##. */
+#define BAD(a, b) #a ## b    /* Non-compliant */
 
 int main(void)
 {

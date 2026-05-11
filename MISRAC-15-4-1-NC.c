@@ -10,7 +10,8 @@ int main(void)
     for (i = 0; i < 10; ++i)
     {
         if (i == 2) { break; }
-        if (i == 4) { break; } /* Non-compliant: more than one terminating break. */
+        if (i == 4) { break; } /* Non-compliant */
+
     }
     return i;
 }

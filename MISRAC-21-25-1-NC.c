@@ -12,7 +12,7 @@ void main(void) {
 
     atomic_init(&astr, lstr);                                    // 初始化
 
-    lstr = atomic_load_explicit(&astr, memory_order_relaxed);    // 不合規 - 使用 memory_order_relaxed
+    lstr = atomic_load_explicit(&astr, memory_order_relaxed);    // non-compliant
     lstr.b = 43;
-    atomic_store_explicit(&astr, lstr, memory_order_release);    // 不合規 - 使用 memory_order_release
+    atomic_store_explicit(&astr, lstr, memory_order_release);    // non-compliant
 }

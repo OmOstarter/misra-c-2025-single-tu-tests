@@ -4,7 +4,7 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-#define MAKE_NAME(a, b) a ## b   /* Non-compliant: ## used. */
+#define MAKE_NAME(a, b) a ## b   /* Non-compliant */
 
 int main(void)
 {

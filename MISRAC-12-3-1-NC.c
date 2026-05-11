@@ -7,7 +7,7 @@
 int main(void)
 {
     int x = 0;
-    int y = (x = 1, x + 1);  /* Non-compliant: comma operator. */
+    int y = (x = 1, x + 1);  /* Non-compliant */
     return y;
 }
 

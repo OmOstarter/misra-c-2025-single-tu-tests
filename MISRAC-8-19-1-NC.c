@@ -11,18 +11,18 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-/* Non-compliant: external declaration at file scope in a source file */
+/* Non-compliant*/
 extern int32_t i;
 
-/* Compliant: defining declaration in source file */
+/* Compliant*/
 int32_t i = 0;
 
 void uses_externs(void)
 {
-    /* Non-compliant: extern var at block scope */
+    /* Non-compliant*/
     extern bool flag;
 
-    /* Non-compliant: extern function at block scope */
+    /* Non-compliant*/
     extern void worker(bool f);
 
     worker(flag);

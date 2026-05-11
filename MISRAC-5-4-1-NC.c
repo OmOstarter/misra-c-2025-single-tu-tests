@@ -5,7 +5,7 @@
  */
 
 #define CONTROL_VALUE 1
-#define CONTROL_VALUE 2     /* Non-compliant: macro identifier is not distinct. */
+#define CONTROL_VALUE 2     /* Non-compliant*/
 
 int main(void)
 {

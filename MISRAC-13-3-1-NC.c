@@ -8,6 +8,7 @@ int main(void)
 {
     int x = 0;
     int y = 0;
-    y = x++;                 /* Non-compliant: assignment side effect plus ++ in same full expression. */
+    y = x++;                 /* Non-compliant */
+
     return y;
 }

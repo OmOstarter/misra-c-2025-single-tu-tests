@@ -8,6 +8,6 @@
 
 int main(void)
 {
-    exit(0);                 /* Non-compliant: termination function used. */
+    exit(0);                 /* Non-compliant */
 }
 

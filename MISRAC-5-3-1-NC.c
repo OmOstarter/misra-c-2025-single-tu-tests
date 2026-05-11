@@ -8,7 +8,7 @@ static int hidden = 0;
 
 int main(void)
 {
-    int hidden = 1;         /* Non-compliant: hides file-scope identifier. */
+    int hidden = 1;         /* Non-compliant */
     return hidden;
 }
 

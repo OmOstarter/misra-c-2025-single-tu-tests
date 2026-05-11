@@ -5,7 +5,7 @@
  */
 
 #define LOCAL_MACRO 1
-#undef LOCAL_MACRO           /* Non-compliant: undef used. */
+#undef LOCAL_MACRO           /* Non-compliant  */
 
 int main(void)
 {

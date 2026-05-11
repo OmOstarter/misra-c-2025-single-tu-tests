@@ -6,7 +6,7 @@
 
 int main(void)
 {
-    long a = 10l;           /* Non-compliant: lowercase l suffix. */
+    long a = 10l;           /* Non-compliant*/
     long b = 10L;           /* Compliant. */
     return (int)(a + b);
 }

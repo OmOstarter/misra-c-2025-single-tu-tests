@@ -26,13 +26,13 @@ int main(void)
     cfloat32_t cf32b = 2.0f;
 
     uint16_t ok_narrow = (uint16_t)(u32a + u32b);
-    uint16_t bad_category = (uint16_t)(s32a + s32b); /* Non-compliant: different essential type category. */
+    uint16_t bad_category = (uint16_t)(s32a + s32b); /* Non-compliant */
     uint16_t ok_non_composite = (uint16_t)s32a;
-    uint32_t bad_wider = (uint32_t)(u16a + u16b); /* Non-compliant: composite cast to wider type. */
+    uint32_t bad_wider = (uint32_t)(u16a + u16b); /* Non-compliant */
     cfloat32_t ok_real_to_complex = (cfloat32_t)(f32a + f32b);
     float32_t ok_complex_to_real = (float32_t)(cf32a + cf32b);
-    cfloat64_t bad_complex_wider = (cfloat64_t)(f32a + f32b); /* Non-compliant: wider corresponding real type. */
-    float64_t bad_real_wider = (float64_t)(cf32a + cf32b); /* Non-compliant: wider than corresponding real type. */
+    cfloat64_t bad_complex_wider = (cfloat64_t)(f32a + f32b); /* Non-compliant */
+    float64_t bad_real_wider = (float64_t)(cf32a + cf32b); /* Non-compliant*/
 
     (void)ok_narrow;
     (void)bad_category;

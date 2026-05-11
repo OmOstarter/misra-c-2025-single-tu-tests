@@ -8,8 +8,8 @@
 
 int main(void)
 {
-    void *p = malloc(16U);   /* Non-compliant: memory allocation function used. */
-    free(p);                 /* Non-compliant: deallocation function used. */
+    void *p = malloc(16U);   /* Non-compliant */
+    free(p);                 /* Non-compliant */
     return 0;
 }
 

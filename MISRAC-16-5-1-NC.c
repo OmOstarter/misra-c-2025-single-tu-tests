@@ -11,7 +11,7 @@ int main(void)
     {
     case 0:
         break;
-    default:                 /* Non-compliant: default is neither first nor last. */
+    default:                 /* Non-compliant */
         break;
     case 1:
         break;

@@ -5,7 +5,7 @@
  */
 
 #if 1
-#include "MISRAC-20-14-1.h"  /* Header contains the matching #endif: non-compliant. */
+#include "MISRAC-20-14-1.h"  /*  non-compliant. */
 
 int main(void)
 {

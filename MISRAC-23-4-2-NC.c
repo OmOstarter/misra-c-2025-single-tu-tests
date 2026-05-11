@@ -11,12 +11,12 @@ typedef Array * ArrayP;
 int32_t handle_funcp (FuncP p) { (void)p; return 0; }
 int32_t handle_intp  (int32_t *p) { (void)p; return 0; }
 
-/* Non-compliant (because Func is listed) */
+/* Non-compliant  */
 #define handle_function_nc(X) _Generic((X)                    \
                               , Func : handle_funcp (&(X))    \
                               , FuncP: handle_funcp   (X)  )
 
-/* Non-compliant (because Array is listed) */
+/* Non-compliant  */
 #define handle_array_nc(X) _Generic((X)                       \
                            , Array    : handle_intp ((X) + 0) \
                            , ArrayP   : handle_intp (*(X))    \

@@ -10,10 +10,10 @@
 
 #include "MISRAC-8-18-1.h"
 
-/* Compliant: tentative definition in .c file, not in header */
+/* Compliant*/
 int32_t i;
 
-/* Compliant: defining declaration */
+/* Compliant*/
 int32_t j = 0;
 
 int main(void)

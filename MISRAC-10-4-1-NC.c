@@ -10,6 +10,6 @@ int main(void)
 {
     int32_t s = -1;
     uint32_t u = 1U;
-    return (s < u) ? 1 : 0;  /* Non-compliant: signed/unsigned usual conversions. */
+    return (s < u) ? 1 : 0;  /* Non-compliant*/
 }
 

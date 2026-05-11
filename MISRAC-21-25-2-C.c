@@ -12,10 +12,10 @@ void main(void) {
 
     atomic_init(&astr, lstr);                                    // 初始化
 
-    lstr = atomic_load(&astr);                                   // 合規 - 預設使用 memory_order_seq_cst
+    lstr = atomic_load(&astr);                                   // compliant
     lstr.b = 43;
-    atomic_store(&astr, lstr);                                   // 合規 - 預設使用 memory_order_seq_cst
+    atomic_store(&astr, lstr);                                   // compliant
 
-    lstr = atomic_load_explicit(&astr, memory_order_seq_cst);    // 合規 - 明確使用 memory_order_seq_cst
-    atomic_store_explicit(&astr, lstr, memory_order_seq_cst);    // 合規 - 明確使用 memory_order_seq_cst
+    lstr = atomic_load_explicit(&astr, memory_order_seq_cst);    // compliant
+    atomic_store_explicit(&astr, lstr, memory_order_seq_cst);    // compliant
 }

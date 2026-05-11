@@ -11,21 +11,21 @@
 
 #include <stdint.h>
 
-/* Non-compliant: x and y are not surrounded by delimiters */
+/* Non-compliant */
 #define M1(x, y) (x * y)              /* Non-compliant */
 
-/* Compliant: each parameter is individually parenthesized */
+/* Compliant */
 #define M2(x, y) ((x) * (y))          /* Compliant */
 
-/* Compliant: S is parenthesized; M is a member name (after .), not an expression */
+/* Compliant*/
 struct S { int16_t minval; };
 #define GET_MEMBER(S_arg, M) ((S_arg)).M    /* Compliant */
 
-/* Compliant: X is delimited by ( and ) in G(X) */
+/* Compliant  */
 #define G(Y) ((Y) + 1)                /* Compliant */
 #define F(X) G((X))                   /* Compliant */
 
-/* Compliant: I delimited by ( and ,; A between , and [; second I between [ and ] */
+/* Compliant */
 #define CALL(A, I) f((I), (A)[(I)])   /* Compliant */
 
 static int16_t f(int16_t a, int16_t b) { return (int16_t)((int16_t)a + b); }

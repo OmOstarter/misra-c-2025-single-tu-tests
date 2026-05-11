@@ -4,7 +4,7 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-int a[] = { [2] = 1 };       /* Non-compliant: designated array initializer without explicit size. */
+int a[] = { [2] = 1 };       /* Non-compliant*/
 int b[3] = { [2] = 1 };      /* Compliant. */
 
 int main(void)

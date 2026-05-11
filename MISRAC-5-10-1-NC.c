@@ -9,24 +9,24 @@
 
 #include <stddef.h>
 
-/* Non-compliant: macro name begins with '_' */
+/* Non-compliant*/
 #define _MY_CONSTANT 42
 
-/* Non-compliant: file-scope identifier begins with '_' */
+/* Non-compliant */
 static int _global_count = 0;
 
-/* Non-compliant: function name begins with '_' */
+/* Non-compliant*/
 static double _BUILTIN_sqrt(double x)
 {
     return x * x;
 }
 
-/* Non-compliant: explicit redeclaration of standard library function */
+/* Non-compliant*/
 extern void *memcpy(void *restrict s1, const void *restrict s2, size_t n);
 
 int main(void)
 {
-    /* Non-compliant: local identifier begins with '_' */
+    /* Non-compliant*/
     int _local_var = _MY_CONSTANT;
     _global_count += (int)_BUILTIN_sqrt((double)_local_var);
     return _global_count;

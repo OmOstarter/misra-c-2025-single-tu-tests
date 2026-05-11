@@ -8,6 +8,6 @@
 
 void test(double d, float f, long double ld, int i)
 {
-  (void)SQRT(d);    /* 預期：符合 MISRA 23.8（default 不在中間） */
+  (void)SQRT(d);    /* compliant */
   
 }

@@ -7,7 +7,7 @@
 int main(void)
 {
     const int x = 1;
-    int *p = (int *)&x;      /* Non-compliant: removes const qualification. */
+    int *p = (int *)&x;      /* Non-compliant*/
     return *p;
 }
 

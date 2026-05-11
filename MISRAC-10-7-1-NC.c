@@ -15,14 +15,14 @@ int main(void)
     uint32_t u32a = 4U;
     uint32_t u32b = 5U;
 
-    u32a = u32a * u16a + u16b;                  /* Compliant: no composite conversion. */
-    u32a = (u32a * u16a) + u16b;                /* Compliant: other operand is not wider. */
-    u32a = u32a * ((uint32_t)u16a + u16b);      /* Compliant: composite expression is uint32_t. */
-    u32a += (u32b + u16b);                      /* Compliant: composite expression is uint32_t. */
+    u32a = u32a * u16a + u16b;                  /* Compliant*/
+    u32a = (u32a * u16a) + u16b;                /* Compliant*/
+    u32a = u32a * ((uint32_t)u16a + u16b);      /* Compliant */
+    u32a += (u32b + u16b);                      /* Compliant */
 
-    u32a = u32a * (u16a + u16b);                /* Non-compliant: composite converted to uint32_t. */
-    u32a += (u16a + u16b);                      /* Non-compliant: composite converted to uint32_t. */
-    u32a = (u16a + u16b) + u32b;                /* Non-compliant: composite converted to uint32_t. */
+    u32a = u32a * (u16a + u16b);                /* Non-compliant */
+    u32a += (u16a + u16b);                      /* Non-compliant */
+    u32a = (u16a + u16b) + u32b;                /* Non-compliant */
 
     return (int)(u16c + (uint16_t)u32a);
 }

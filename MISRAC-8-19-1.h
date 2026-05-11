@@ -5,5 +5,5 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-extern int32_t i;        /* Compliant: external declaration in a header file */
-extern void worker(bool flag);  /* Compliant: function declaration in header  */
+extern int32_t i;        /* Compliant */
+extern void worker(bool flag);  /* Compliant */

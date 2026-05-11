@@ -6,7 +6,7 @@
 
 struct S
 {
-    signed int bad : 1;     /* Non-compliant: named single-bit signed bit-field. */
+    signed int bad : 1;     /* Non-compliant*/
     unsigned int ok : 1;
 };
 

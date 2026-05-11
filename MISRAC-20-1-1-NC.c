@@ -6,11 +6,11 @@
  *   - #include <stdint.h> -- only #define and comments precede it
  */
 
-/* Compliant: only preprocessor directive and comments before this include */
+/* Compliant */
 #define MISRAC_20_1_MACRO 1
 #include <stdint.h>   /* Compliant */
 
-/* Non-compliant: code (variable declaration) now precedes subsequent include */
+/* Non-compliant */
 static uint16_t code_before_include = MISRAC_20_1_MACRO;  /* code, not a directive */
 #include <stddef.h>                                         /* Non-compliant */
 

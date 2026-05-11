@@ -13,7 +13,8 @@ int main(void)
     case 1:
         if (flag)
         {
-    case 2:                  /* Non-compliant: case label nested inside if-block, not switch body. */
+    case 2:                  /* Non-compliant */
+
             x = 1;
         }
         break;

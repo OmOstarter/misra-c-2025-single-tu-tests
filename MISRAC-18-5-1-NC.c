@@ -9,7 +9,7 @@ int main(void)
     int x = 0;
     int *p = &x;
     int **pp = &p;
-    int ***ppp = &pp;        /* Non-compliant: more than two pointer nesting levels. */
+    int ***ppp = &pp;        /* Non-compliant */
     return ***ppp;
 }
 

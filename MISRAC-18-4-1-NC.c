@@ -8,7 +8,7 @@ int main(void)
 {
     int a[4] = { 0 };
     int *p = &a[0];
-    p = p + 1;               /* Non-compliant: pointer arithmetic. */
+    p = p + 1;               /* Non-compliant */
     return *p;
 }
 

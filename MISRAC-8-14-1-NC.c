@@ -4,7 +4,7 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-void f(int * restrict p)     /* Non-compliant: restrict qualifier used. */
+void f(int * restrict p)     /* Non-compliant*/
 {
     *p = 1;
 }

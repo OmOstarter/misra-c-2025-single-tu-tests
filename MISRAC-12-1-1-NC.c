@@ -6,7 +6,7 @@
 
 int main(void)
 {
-    int x = 1 + 2 * 3;       /* Non-compliant: precedence not explicit. */
+    int x = 1 + 2 * 3;       /* Non-compliant */
     int y = 1 + (2 * 3);     /* Compliant. */
     return x + y;
 }

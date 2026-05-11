@@ -11,7 +11,7 @@ static void f(void) {}
 int main(void)
 {
     FuncPtr fp = f;
-    void *vp = (void *)fp;   /* Non-compliant: function pointer to object pointer. */
+    void *vp = (void *)fp;   /* Non-compliant*/
     return vp == 0 ? 0 : 1;
 }
 

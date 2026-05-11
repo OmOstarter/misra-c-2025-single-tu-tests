@@ -12,6 +12,6 @@ int main(void)
 {
     struct S a = { 0 };
     struct S b = { 1 };
-    return memcmp(&a, &b, sizeof(a)); /* Non-compliant: memcmp on struct object. */
+    return memcmp(&a, &b, sizeof(a)); /* Non-compliant */
 }
 

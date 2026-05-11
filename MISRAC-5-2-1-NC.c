@@ -7,7 +7,7 @@
 int main(void)
 {
     int value = 0;
-    int value = 1;          /* Non-compliant: duplicate identifier in same scope. */
+    int value = 1;          /* Non-compliant*/
     return value;
 }
 

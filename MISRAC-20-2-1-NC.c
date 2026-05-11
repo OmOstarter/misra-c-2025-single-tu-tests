@@ -4,7 +4,7 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-#include "bad\name.h"        /* Non-compliant: backslash in header name. */
+#include "bad\name.h"        /* Non-compliant */
 
 int main(void)
 {

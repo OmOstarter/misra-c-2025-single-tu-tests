@@ -4,7 +4,7 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-extern int external_array[]; /* Non-compliant: external array size not specified. */
+extern int external_array[]; /* Non-compliant*/
 int external_array[4] = { 0, 1, 2, 3 };
 
 int main(void)

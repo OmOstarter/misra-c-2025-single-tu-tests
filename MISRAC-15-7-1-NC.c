@@ -13,7 +13,8 @@ int main(void)
     }
     else if (x == 1)
     {
-        x = 2;               /* Non-compliant: else-if chain lacks final else. */
+        x = 2;               /* Non-compliant */
+
     }
     return x;
 }

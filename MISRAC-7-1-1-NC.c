@@ -6,7 +6,7 @@
 
 int main(void)
 {
-    int mode = 012;         /* Non-compliant: octal constant. */
+    int mode = 012;         /* Non-compliant*/
     int decimal = 10;       /* Compliant. */
     return mode + decimal;
 }

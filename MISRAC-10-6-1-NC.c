@@ -19,13 +19,13 @@ int main(void)
     uint8_t u8b = 2U;
     uint16_t u16a = 1U;
     uint16_t u16b = 2U;
-    uint16_t u16c = u16a + u16b;             /* Compliant: same essential type. */
-    uint16_t u16d = u8a + u8b;               /* Non-compliant: initialization to wider type. */
-    uint32_t u32a = (uint32_t)u16a + u16b;   /* Compliant: cast makes composite uint32_t. */
+    uint16_t u16c = u16a + u16b;             /* Compliant*/
+    uint16_t u16d = u8a + u8b;               /* Non-compliant*/
+    uint32_t u32a = (uint32_t)u16a + u16b;   /* Compliant*/
 
-    u32a = u16a + u16b;                      /* Non-compliant: assigned to wider type. */
-    use_uint32(u16a + u16b);                 /* Non-compliant: argument conversion to wider type. */
-    u16c = u8a + u8b;                        /* Non-compliant: assignment to wider type. */
+    u32a = u16a + u16b;                      /* Non-compliant*/
+    use_uint32(u16a + u16b);                 /* Non-compliant */
+    u16c = u8a + u8b;                        /* Non-compliant*/
 
     return (int)(u16c + u16d + (uint16_t)u32a);
 }

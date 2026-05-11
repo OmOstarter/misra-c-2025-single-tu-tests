@@ -9,7 +9,7 @@
 
 int main(void)
 {
-    int Sum = 2; /* Non-compliant: identifier matches a function-like macro name. */
-    static int low_pressure_turbine_temperature_2; /* Non-compliant in the first 31 characters. */
+    int Sum = 2; /* Non-compliant */
+    static int low_pressure_turbine_temperature_2; /* Non-compliant */
     return Sum + low_pressure_turbine_temperature_2;
 }

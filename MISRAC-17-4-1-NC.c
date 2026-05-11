@@ -10,7 +10,7 @@ int f(int x)
     {
         return 1;
     }
-                            /* Non-compliant: missing explicit return on this path. */
+                            /* Non-compliant */
 }
 
 int main(void)

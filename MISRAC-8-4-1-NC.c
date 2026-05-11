@@ -9,8 +9,8 @@
 extern int16_t count;
 int16_t count = 0;             /* Compliant. */
 
-extern uint16_t speed = 6000u; /* Non-compliant: no prior declaration. */
-uint8_t pressure = 101u;       /* Non-compliant: no prior declaration. */
+extern uint16_t speed = 6000u; /* Non-compliant*/
+uint8_t pressure = 101u;       /* Non-compliant*/
 
 extern void func1(void);
 extern void func2(int16_t x, int16_t y);
@@ -26,13 +26,13 @@ void func2(int16_t x, int16_t y)
     (void)y;
 }
 
-void func3(int16_t x, uint16_t y) /* Non-compliant: incompatible declaration. */
+void func3(int16_t x, uint16_t y) /* Non-compliant*/
 {
     (void)x;
     (void)y;
 }
 
-void func4(void)                /* Non-compliant: no prior declaration. */
+void func4(void)                /* Non-compliant*/
 {
 }
 

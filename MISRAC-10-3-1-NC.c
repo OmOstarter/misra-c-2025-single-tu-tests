@@ -27,7 +27,7 @@ static void use_uint32(uint32_t x)
 
 static uint8_t foo1(uint16_t x)
 {
-    return x;                 /* Non-compliant: uint16_t to uint8_t. */
+    return x;                 /* Non-compliant*/
 }
 
 int main(void)
@@ -49,35 +49,35 @@ int main(void)
     bool_t flag = (bool_t)0;
 
     (void)flag;
-    ena = A1;                 /* Compliant: same enum. */
-    s8a = K1;                 /* Compliant: constant value fits. */
-    u8a = 2;                  /* Compliant by exception. */
-    u32a = u16a;              /* Compliant: wider unsigned type. */
-    use_uint16(u8a);          /* Compliant: wider unsigned parameter. */
-    cf32a = f32a;             /* Compliant by exception 4. */
-    cf64a = f64a;             /* Compliant by exception 4. */
+    ena = A1;                 /* Compliant */
+    s8a = K1;                 /* Compliant*/
+    u8a = 2;                  /* Compliant*/
+    u32a = u16a;              /* Compliant*/
+    use_uint16(u8a);          /* Compliant */
+    cf32a = f32a;             /* Compliant*/
+    cf64a = f64a;             /* Compliant*/
 
-    u8a = 1.0f;               /* Non-compliant: unsigned and floating. */
-    flag = 0;                 /* Non-compliant: boolean and signed. */
-    cha = 7;                  /* Non-compliant: character and signed. */
-    u8a = 'a';                /* Non-compliant: unsigned and character. */
-    u8b = 1 - 2;              /* Non-compliant: negative signed to unsigned. */
-    u8c += 'a';               /* Non-compliant: character result to unsigned. */
-    use_uint32(s32a);         /* Non-compliant: signed and unsigned. */
-    f32a = cf32a;             /* Non-compliant: real and complex. */
-    f64a = cf64a;             /* Non-compliant: real and complex. */
-    s8a = K2;                 /* Non-compliant: constant value does not fit. */
-    u16a = u32a;              /* Non-compliant: uint32_t to uint16_t. */
-    use_uint16(u32a);         /* Non-compliant: uint32_t to uint16_t. */
-    cf32a = f64a;             /* Non-compliant: complex float narrower than double. */
+    u8a = 1.0f;               /* Non-compliant */
+    flag = 0;                 /* Non-compliant*/
+    cha = 7;                  /* Non-compliant*/
+    u8a = 'a';                /* Non-compliant*/
+    u8b = 1 - 2;              /* Non-compliant */
+    u8c += 'a';               /* Non-compliant*/
+    use_uint32(s32a);         /* Non-compliant*/
+    f32a = cf32a;             /* Non-compliant */
+    f64a = cf64a;             /* Non-compliant */
+    s8a = K2;                 /* Non-compliant*/
+    u16a = u32a;              /* Non-compliant */
+    use_uint16(u32a);         /* Non-compliant */
+    cf32a = f64a;             /* Non-compliant */
 
     switch (u8a)
     {
     case 0:                   /* Compliant by exception. */
         break;
-    case 'a':                 /* Non-compliant: unsigned and character. */
+    case 'a':                 /* Non-compliant */
         break;
-    case -1:                  /* Non-compliant: negative signed to unsigned. */
+    case -1:                  /* Non-compliant */
         break;
     default:
         break;

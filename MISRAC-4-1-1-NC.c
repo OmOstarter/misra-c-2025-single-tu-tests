@@ -8,19 +8,19 @@
 
 #include <stdint.h>
 
-/* Compliant: \x41 terminated by end of string literal */
+/* Compliant*/
 static const char s2[] = "\x41" "g";  /* Compliant */
 
-/* Compliant: \x41 terminated by another escape sequence */
+/* Compliant */
 static const char s3[] = "\x41\x67";  /* Compliant */
 
-/* Non-compliant: \x41 followed by 'g' (not another escape, not end of literal) */
+/* Non-compliant */
 static const char s1[] = "\x41g";     /* Non-compliant */
 
-/* Compliant: \141 terminated by another escape sequence */
+/* Compliant: */
 static const int c2 = '\141\t';       /* Compliant */
 
-/* Non-compliant: \141 followed by 't' (not another escape, not end of literal) */
+/* Non-compliant: */
 static const int c1 = '\141t';        /* Non-compliant */
 
 int main(void)

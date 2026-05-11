@@ -4,7 +4,7 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-#if 10                       /* Non-compliant: expression is not 0 or 1. */
+#if 10                       /* Non-compliant */
 #endif
 
 int main(void)

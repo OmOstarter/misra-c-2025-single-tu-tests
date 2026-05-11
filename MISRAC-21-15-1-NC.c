@@ -10,7 +10,7 @@ int main(void)
 {
     int src = 0;
     unsigned int dst = 0U;
-    (void)memcpy(&dst, &src, sizeof(dst)); /* Non-compliant: incompatible pointed-to types. */
+    (void)memcpy(&dst, &src, sizeof(dst)); /* Non-compliant */
     return (int)dst;
 }
 

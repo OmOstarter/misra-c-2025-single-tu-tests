@@ -10,7 +10,7 @@ int main(void)
     switch (x)
     {
     case 0:
-        break;               /* Non-compliant: no default label. */
+        break;               /* Non-compliant */
     }
     return x;
 }

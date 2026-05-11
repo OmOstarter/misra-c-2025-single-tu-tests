@@ -8,7 +8,8 @@ int main(void)
 {
     int x = 0;
     int y = 0;
-    if ((x = y) != 0)        /* Non-compliant: result of assignment used. */
+    if ((x = y) != 0)        /* Non-compliant */
+
     {
         return x;
     }

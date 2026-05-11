@@ -4,7 +4,7 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-# invalid preprocessing token /* Non-compliant: invalid preprocessing directive. */
+# invalid preprocessing token /* Non-compliant */
 
 int main(void)
 {

@@ -7,7 +7,7 @@
 enum E
 {
     E_A,
-    E_B = 0,                /* Non-compliant: duplicates implicit E_A value. */
+    E_B = 0,                /* Non-compliant*/
     E_C
 };
 

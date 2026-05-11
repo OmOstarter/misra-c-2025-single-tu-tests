@@ -6,7 +6,7 @@
 
 void f(int n)
 {
-    int a[n];                /* Non-compliant: variable-length array. */
+    int a[n];                /* Non-compliant */
     a[0] = 0;
 }
 

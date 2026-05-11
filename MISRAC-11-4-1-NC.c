@@ -9,7 +9,7 @@
 int main(void)
 {
     int x = 0;
-    uintptr_t address = (uintptr_t)&x;    /* Non-compliant: pointer to arithmetic type. */
+    uintptr_t address = (uintptr_t)&x;    /* Non-compliant*/
     return (int)address;
 }
 

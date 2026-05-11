@@ -18,7 +18,7 @@ static uint16_t x;
 
 void discarded(uint16_t para2)
 {
-    func(para2);             /* Non-compliant - value discarded */
+    func(para2);             /* Non-compliant   */
     (void) func(para2);      /* Compliant */
     x = func(para2);         /* Compliant */
 }

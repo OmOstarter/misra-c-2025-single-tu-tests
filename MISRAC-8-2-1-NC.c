@@ -4,10 +4,10 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-int f();                    /* Non-compliant: not prototype form. */
+int f();                    /* Non-compliant */
 
 int f(a)
-int a;                      /* Non-compliant: old-style definition. */
+int a;                      /* Non-compliant*/
 {
     return a;
 }

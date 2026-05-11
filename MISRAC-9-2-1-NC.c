@@ -8,7 +8,7 @@ struct Pair { int x; int y; };
 
 int main(void)
 {
-    struct Pair a[2] = { 1, 2, 3, 4 };       /* Non-compliant: missing nested braces. */
+    struct Pair a[2] = { 1, 2, 3, 4 };       /* Non-compliant*/
     struct Pair b[2] = { { 1, 2 }, { 3, 4 } }; /* Compliant. */
     return a[0].x + b[0].x;
 }

@@ -9,7 +9,7 @@
 int main(void)
 {
     bool b = true;
-    switch (b)               /* Non-compliant: essentially Boolean switch expression. */
+    switch (b)               /* Non-compliant */
     {
     case true:
         break;

@@ -6,7 +6,7 @@
 
 int main(void)
 {
-unused_label:          /* Non-compliant: label is never used. */
+unused_label:          /* Non-compliant*/
     return 0;
 }
 

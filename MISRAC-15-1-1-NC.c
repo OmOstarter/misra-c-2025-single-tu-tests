@@ -6,7 +6,8 @@
 
 int main(void)
 {
-    goto end;                /* Non-compliant: goto used. */
+    goto end;               /* Non-compliant */
+
 end:
     return 0;
 }

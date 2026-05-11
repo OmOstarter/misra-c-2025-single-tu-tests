@@ -6,7 +6,8 @@
 
 int main(void)
 {
-    goto inner;              /* Non-compliant: target label is in nested block. */
+    goto inner;              /* Non-compliant */
+
     {
 inner:
         return 0;

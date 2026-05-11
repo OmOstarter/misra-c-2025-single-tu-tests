@@ -1,7 +1,7 @@
 #include <stdalign.h>
 #include <stdint.h>
 
-alignas(16) alignas(8) alignas(4) alignas(2) int32_t a; // 不合規 - 兩個對齊規範
+alignas(16) alignas(8) alignas(4) alignas(2) int32_t a; // non-compliant
 
 int main(){
 

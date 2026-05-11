@@ -9,7 +9,8 @@
 int main(void)
 {
     int x = 0;
-    size_t s = sizeof(x++);  /* Non-compliant: side effect in sizeof operand. */
+    size_t s = sizeof(x++);  /* Non-compliant */
+
     return (int)s;
 }
 

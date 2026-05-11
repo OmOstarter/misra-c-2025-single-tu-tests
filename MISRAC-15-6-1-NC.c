@@ -8,7 +8,8 @@ int main(void)
 {
     int x = 0;
     if (x == 0)
-        x = 1;               /* Non-compliant: selection body is not compound. */
+        x = 1;               /* Non-compliant */
+
     return x;
 }
 

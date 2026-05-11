@@ -9,7 +9,7 @@ struct Incomplete;
 int main(void)
 {
     struct Incomplete *p = 0;
-    int *q = (int *)p;       /* Non-compliant: incomplete pointer to other pointer. */
+    int *q = (int *)p;       /* Non-compliant*/
     return q == 0 ? 0 : 1;
 }
 

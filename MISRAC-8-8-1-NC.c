@@ -4,7 +4,7 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-extern int internal_object;  /* Non-compliant: declaration misses static. */
+extern int internal_object;  /* Non-compliant */
 static int internal_object = 1;
 
 int main(void)

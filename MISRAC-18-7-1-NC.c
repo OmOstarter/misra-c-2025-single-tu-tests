@@ -7,7 +7,7 @@
 struct Packet
 {
     unsigned int length;
-    unsigned char data[];    /* Non-compliant: flexible array member. */
+    unsigned char data[];    /* Non-compliant */
 };
 
 int main(void)

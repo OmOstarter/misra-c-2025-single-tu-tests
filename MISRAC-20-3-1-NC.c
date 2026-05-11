@@ -4,11 +4,11 @@
  * Non-compliant: macro expands to bare tokens (no angle brackets or quotes).
  */
 
-/* Compliant: HEADER expands to <stdint.h> — a proper <filename> form */
+/* Compliant  */
 #define HEADER <stdint.h>
 #include HEADER
 
-/* Non-compliant: FILENAME expands to bare tokens stdint.h (no < > or " ") */
+/* Non-compliant */
 #define FILENAME stdint.h
 #include FILENAME
 

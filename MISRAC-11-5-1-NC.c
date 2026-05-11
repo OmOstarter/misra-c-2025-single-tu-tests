@@ -8,7 +8,7 @@ int main(void)
 {
     int x = 0;
     void *vp = &x;
-    int *ip = (int *)vp;     /* Non-compliant: void pointer to object pointer. */
+    int *ip = (int *)vp;     /* Non-compliant*/
     return *ip;
 }
 

@@ -14,9 +14,8 @@ static void f(uint32_t *ptr)
 {
     /* Assignment / if-statement */
     if (ptr != NULL) {}          /* Compliant */
-    if (ptr != 0) {}             /* Compliant for 11.11 (violates 11.9) */
+    if (ptr != 0) {}             /* Compliant */
     if (ptr) {}                  /* Non-compliant */
-
     /* Logical NOT */
     if (!ptr) {}                 /* Non-compliant */
 

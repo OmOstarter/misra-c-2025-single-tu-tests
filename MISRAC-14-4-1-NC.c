@@ -7,7 +7,8 @@
 int main(void)
 {
     int x = 1;
-    if (x)                   /* Non-compliant: controlling expression is not Boolean. */
+    if (x)                   /* Non-compliant */
+
     {
         return 1;
     }

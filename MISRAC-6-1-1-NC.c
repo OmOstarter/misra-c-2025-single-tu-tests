@@ -17,10 +17,10 @@ struct S
     unsigned int ok_unsigned_int : 2;
     signed int ok_signed_int : 2;
     UINT_16 ok_typedef_unsigned_int : 2;
-    int bad_plain_int : 2;       /* Non-compliant: plain int is not permitted. */
-    signed long bad_signed_long : 2;   /* Non-compliant: not signed int. */
-    unsigned long bad_unsigned_long : 2; /* Non-compliant: not unsigned int. */
-    enum E bad_enum : 2;         /* Non-compliant: enum bit-field type. */
+    int bad_plain_int : 2;       /* Non-compliant */
+    signed long bad_signed_long : 2;   /* Non-compliant */
+    unsigned long bad_unsigned_long : 2; /* Non-compliant */
+    enum E bad_enum : 2;         /* Non-compliant*/
 };
 
 int main(void)

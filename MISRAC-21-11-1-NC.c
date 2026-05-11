@@ -4,7 +4,7 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-#include <tgmath.h>          /* Non-compliant advisory example. */
+#include <tgmath.h>          /* Non-compliant */
 
 int main(void)
 {

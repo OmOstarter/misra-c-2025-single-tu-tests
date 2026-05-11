@@ -26,5 +26,5 @@ enum E e = A;
 
 void test(void)
 {
-  filter_ints(e);          /* 預期：違反 23.6（essential enum vs unsigned int） */
+  filter_ints(e);          // non-compliant
 }

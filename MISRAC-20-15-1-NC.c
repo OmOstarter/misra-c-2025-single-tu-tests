@@ -4,8 +4,8 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-#define _Reserved_macro 1    /* Non-compliant: reserved macro name. */
-#undef _Reserved_macro       /* Non-compliant: reserved macro name. */
+#define _Reserved_macro 1    /* Non-compliant */
+#undef _Reserved_macro       /* Non-compliant  */
 
 int main(void)
 {

@@ -21,22 +21,22 @@ int switch_test(int x, int a, int b)
         switch (x)
         {
             case 0:
-                break;          /* Compliant - unconditional break */
-            case 1:             /* Compliant - empty fall through allows grouping */
+                break;          /* Compliant*/
+            case 1:             /* Compliant*/
             case 2:
                 break;          /* Compliant */
             case 4:
-                a = b;          /* Non-compliant - break omitted */
+                a = b;          /* Non-compliant */
             case 5:
                 if (a == b)
                 {
                     ++a;
-                    break;      /* Non-compliant - conditional break only */
+                    break;      /* Non-compliant */
                 }
             case 6:
-                abort();        /* Compliant - abort is _Noreturn */
+                abort();        /* Compliant  */
             case 7:
-                continue;       /* Compliant - continue terminates the clause */
+                continue;       /* Compliant  */
             default:
                 break;          /* Compliant */
         }

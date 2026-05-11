@@ -4,7 +4,7 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-static int f(int unused)   /* Non-compliant: parameter is never used. */
+static int f(int unused)   /* Non-compliant */
 {
     return 0;
 }

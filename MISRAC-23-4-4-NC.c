@@ -8,12 +8,12 @@ int32_t handle_null_terminator (int n, const char *s) { (void)n; (void)s; return
 /* Avoid multiple associations if size == 1 */
 #define SizeofNonEmpty(A) (sizeof (A) > 1 ? sizeof (A) : 2)
 
-/* Non-compliant - tries to match argument array type */
+/* Non-compliant  */
 #define only_strings_nc(X) _Generic((X)                              \
   , char[SizeofNonEmpty (X)]: handle_sized_string (sizeof (X), (X))  \
   , char[1]                 : handle_null_terminator (1, (X)))
 
-/* Compliant - matches pointer to argument array type */
+/* Compliant  */
 #define only_strings(X) _Generic(&(X)                                     \
   , char (*) [SizeofNonEmpty (X)]: handle_sized_string (sizeof (X), (X))  \
   , char (*) [1]: handle_null_terminator (1, (X)))

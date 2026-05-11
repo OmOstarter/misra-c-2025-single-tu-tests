@@ -7,6 +7,7 @@
 int main(void)
 {
 back:
-    goto back;               /* Non-compliant: jumps to earlier label. */
+    goto back;              /* Non-compliant */
+
 }
 

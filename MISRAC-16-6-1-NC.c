@@ -9,7 +9,7 @@ int main(void)
     int x = 0;
     switch (x)
     {
-    default:                 /* Non-compliant: only one switch-clause. */
+    default:                 /* Non-compliant */
         break;
     }
     return x;

@@ -8,7 +8,7 @@
 
 int main(void)
 {
-    printf("MISRA\n");       /* Non-compliant: standard I/O function used. */
+    printf("MISRA\n");       /* Non-compliant */
     return 0;
 }
 

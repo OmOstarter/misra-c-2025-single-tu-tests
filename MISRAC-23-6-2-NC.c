@@ -26,5 +26,5 @@ enum E e = A;
 
 void test(void)
 {
-  filter_ints(s16 + s16);  /* 預期：違反 23.6（essential short vs int） */
+  filter_ints(s16 + s16);  // non-compliant
 }

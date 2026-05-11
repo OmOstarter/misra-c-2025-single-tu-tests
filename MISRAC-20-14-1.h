@@ -1,1 +1,1 @@
-#endif /* Non-compliant: closes #if from including source file. */
+#endif /* Non-compliant */

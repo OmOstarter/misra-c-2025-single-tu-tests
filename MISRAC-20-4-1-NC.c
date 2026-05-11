@@ -4,7 +4,7 @@
  * snippets intentionally trigger compiler diagnostics as well.
  */
 
-#define int signed int       /* Non-compliant: macro with keyword name. */
+#define int signed int       /* Non-compliant  */
 
 int main(void)
 {

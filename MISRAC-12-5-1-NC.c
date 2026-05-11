@@ -8,7 +8,8 @@
 
 void f(int a[10])
 {
-    (void)sizeof(a);         /* Non-compliant: sizeof on array parameter. */
+    (void)sizeof(a);        /* Non-compliant */
+
 }
 
 int main(void)

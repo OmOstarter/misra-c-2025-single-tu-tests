@@ -8,7 +8,7 @@
 
 int main(void)
 {
-    time_t now = time(0);    /* Non-compliant: time/date function used. */
+    time_t now = time(0);    /* Non-compliant */
     return (int)now;
 }
 

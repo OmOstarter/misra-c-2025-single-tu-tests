@@ -7,7 +7,8 @@
 int main(void)
 {
     int x = 0;
-    switch (x)               /* Non-compliant: deliberately missing default and termination. */
+    switch (x)               /* Non-compliant */
+
     {
     case 0:
         x = 1;
